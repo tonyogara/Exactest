@@ -27,12 +27,8 @@ public class Launch extends TestBase{
 
 	@When("^I select the Consultancy link$")
 	public void i_select_the_Consultancy_link() throws Throwable {
-		System.out.println("When..");
 		hp = new HomePage();
 		hp.selectConsultancyLink();
-//		System.out.println("Launch.java....before driver.findelement");
-		//driver.findElement(By.xpath("//nav[@id='site-navigation']//a[contains(text(),'Consultancy')]")).click();
-//		System.out.println("Launch.java....after driver.findelement");
 	}
 
 	@Then("^I will be on the Consultancy page$")

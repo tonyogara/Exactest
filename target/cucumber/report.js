@@ -33,21 +33,21 @@ formatter.match({
   "location": "Launch.i_launch_the_application()"
 });
 formatter.result({
-  "duration": 3346941947,
+  "duration": 2984463938,
   "status": "passed"
 });
 formatter.match({
   "location": "Launch.i_select_the_Consultancy_link()"
 });
 formatter.result({
-  "duration": 28621533,
-  "error_message": "java.lang.NullPointerException\n\tat com.qa.exactest.pages.HomePage.selectConsultancyLink(HomePage.java:47)\n\tat StepDefinitions.Launch.i_select_the_Consultancy_link(Launch.java:32)\n\tat ✽.When I select the Consultancy link(src/main/resource/Features/Launch.feature:5)\n",
-  "status": "failed"
+  "duration": 548670678,
+  "status": "passed"
 });
 formatter.match({
   "location": "Launch.i_will_be_on_the_Consultancy_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 467942,
+  "status": "passed"
 });
 });

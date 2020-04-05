@@ -16,8 +16,8 @@ import com.qa.exactest.util.Util;
 
 public class TestBase 
 {
-	public WebDriver driver;
-	public Properties prop;
+	public static WebDriver driver;
+	public static Properties prop;
 	
 	
 	public TestBase()

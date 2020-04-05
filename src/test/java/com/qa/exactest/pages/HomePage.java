@@ -15,38 +15,32 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomePage extends TestBase {
+public class HomePage extends TestBase 
+{
+
+	@FindBy(xpath="//nav[@id='site-navigation']//a[contains(text(),'Automation')]")
+	WebElement automationLink;
 
 	
-	//--@FindBy(linkText = "Consultancy")
-	//nav[@id='site-navigation']//a[contains(text(),'Consultancy')]
-	//*[@id="primary-menu"]/ul/li[1]/a
-//	<a href="index.html" aria-current="page">Consultancy</a>
-//	#primary-menu > ul > li.page_item.page-item-12.current_page_item.is-active > a
-//	/html/body/div[1]/header/div[1]/div/div/div[3]/nav/div/ul/li[1]/a
-				   //nav[@id='site-navigation']//a[contains(text(),'Consultancy')]
-	@FindBy(xpath="//nav[@id='site-navigation']//a[contains(text(),'Consultancy')]")
+	@FindBy(xpath="/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[3]/nav[1]/div[1]/ul[1]/li[2]/a[1]")
 	WebElement consultancyLink;
 	
-	//WebElement consultancyLink = driver.findElement(By.xpath("//nav[@id='site-navigation']//a[contains(text(),'Consultancy')]"));
-	
-	
-	
+		
 	public HomePage()
 	{
 		PageFactory.initElements(driver, this);		
 	}
 	
 	
-	
-	//public ConsultancyPage selectConsutancyLink()
 	public void selectConsultancyLink()
+	{	
+		consultancyLink.click();
+	}
+	
+	
+	public void selectAutomationLink()
 	{
-		System.out.println("before selecting the Consultancy link");
-		
-		driver.findElement(By.xpath("//nav[@id='site-navigation']//a[contains(text(),'Consultancy')]")).click();//driver.findElement(By.xpath("//nav[@id='site-navigation']//a[contains(text(),'Consultancy')]")).click();
-		//consultancyLink.click();
-		System.out.println("after selecting the Consultancy link");
+		automationLink.click();
 	}
 	
 	
