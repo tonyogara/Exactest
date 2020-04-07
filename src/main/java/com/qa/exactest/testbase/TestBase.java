@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.AfterClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -70,15 +71,19 @@ public class TestBase
 		}
 		
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		//driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Util.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
-		driver.get(prop.getProperty("launchUrl"));
+		//driver.get(prop.getProperty("launchUrl"));
 		
 	}
 	
-	
+	@AfterClass()
+	protected void tearDown() {
+	    driver.quit();
+	    driver = null;
+	}
 	
 	
 	

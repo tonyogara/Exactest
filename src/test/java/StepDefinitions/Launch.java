@@ -34,6 +34,13 @@ public class Launch extends TestBase{
 	@Then("^I will be on the Consultancy page$")
 	public void i_will_be_on_the_Consultancy_page() throws Throwable {
 		System.out.println("Then...");
+		String expectedTitle = "Consultancy | Exactest - Improve the Quality of your Software";
+		System.out.println("Expected title is :" + expectedTitle);
+		String url = hp.getPageTitle();
+		System.out.println("Page title is :" + url);
+		Assert.assertEquals(expectedTitle, url);
+		
+		
 	}
 	
 	

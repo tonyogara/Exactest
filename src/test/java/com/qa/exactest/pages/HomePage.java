@@ -1,6 +1,7 @@
 package com.qa.exactest.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,12 +20,21 @@ public class HomePage extends TestBase
 {
 
 	@FindBy(xpath="//nav[@id='site-navigation']//a[contains(text(),'Automation')]")
-	WebElement automationLink;
+	private WebElement automationLink;
 
 	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[3]/nav[1]/div[1]/ul[1]/li[2]/a[1]")
-	WebElement consultancyLink;
+	@FindBy(xpath="//nav[@id='site-navigation']//a[contains(text(),'Consultancy')]")
+	private WebElement consultancyLink;
 	
+	
+	@FindBy(xpath="//ul[@class='inline']//a[contains(text(),'Contact us')]")
+	private WebElement contactUsLink;
+	
+
+	
+	
+//	@FindBy(linkText="Contact us •")
+//	private WebElement contactUsLink;
 		
 	public HomePage()
 	{
@@ -44,4 +54,23 @@ public class HomePage extends TestBase
 	}
 	
 	
+	public String getPageTitle()
+	{
+		return driver.getTitle();
+	}
+	
+	
+	
+	public void selectContactLink()
+	{
+		String str = contactUsLink.getText();
+		System.out.println(str);		
+	}
+	
+	
+	
+	public void launchCountactUsUrl()
+	{
+		driver.get(prop.getProperty("contactUsUrl"));
+	}
 }
