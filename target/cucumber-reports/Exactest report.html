@@ -38,7 +38,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -52,7 +51,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Apr 7, 2020 01:20:55 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Apr 7, 2020 03:02:37 PM</span>
 				</a>
 			</li>
 			<li>
@@ -78,7 +77,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -91,7 +89,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@tag2</a></li>
+					<li><a href='#'>@SmokeTest</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -139,10 +137,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -154,10 +152,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -169,10 +167,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='83.333%'><span class='strong'>5</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -186,15 +184,15 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Check Contact Us functionality</span>
-						<span class='test-time'>Apr 7, 2020 01:20:55 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Apr 7, 2020 03:02:37 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 0m 9s+213ms</span>
+<div class='scenariooutline node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 0m 9s+296ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Veirify Phone Number error messages</span>
@@ -202,7 +200,7 @@
 	<ul class='steps'>
 		<li test-id='3' class='node scenario pass' status='pass'>
 			<div class='category-list'>
-				<span class='category label white-text'>@tag2</span>
+				<span class='category label white-text'>@SmokeTest</span>
 			</div>
 			
 			<b>Scenario</b>
@@ -224,9 +222,9 @@
 					</li>
 				</ul>
 		</li>
-		<li test-id='7' class='node scenario fail' status='fail'>
+		<li test-id='7' class='node scenario pass' status='pass'>
 			<div class='category-list'>
-				<span class='category label white-text'>@tag2</span>
+				<span class='category label white-text'>@SmokeTest</span>
 			</div>
 			
 			<b>Scenario</b>
@@ -242,14 +240,9 @@
 						<span class="bdd-step-name">When I enter valid full name "Bob Brown" and invalid phone entry "" and email "Bob.Brown@email.com" and message "Some message"</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='10' class='node then fail' status='fail'><b>Then</b>
-						<span class="bdd-step-name">Then the correct "The field is required@." is displayed</span>
-							<div class='pre'><textarea>org.junit.ComparisonFailure: expected:<...he field is required[@].> but was:<...he field is required[].>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at StepDefinitions.Contact_Us.the_correct_is_displayed(Contact_Us.java:55)
-	at ✽.Then the correct "The field is required@." is displayed(src/main/resource/Features/Contact_Us.feature:7)
-</textarea></div>
+					<li test-id='10' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then the correct "The field is required." is displayed</span>
+							<div class='pre'>passed</div>
 					</li>
 				</ul>
 		</li>
@@ -309,16 +302,15 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@tag2</span>
+						<span class='category-name'>@SmokeTest</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
-							<span class='label fail'>1</span>
+							<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
 							
 						</div>
 					
@@ -333,14 +325,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 7, 2020 01:20:55 PM</td>
+										<td>Apr 7, 2020 03:02:37 PM</td>
 										<td class='linked' test-id='3'>Check Contact Us functionality.Veirify Phone Number error messages.Veirify Phone Number error messages</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 7, 2020 01:21:00 PM</td>
+										<td>Apr 7, 2020 03:02:42 PM</td>
 										<td class='linked' test-id='7'>Check Contact Us functionality.Veirify Phone Number error messages.Veirify Phone Number error messages</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -359,72 +351,6 @@
 	</div>
 </div>
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>org.junit.ComparisonFailure</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Apr 7, 2020 01:21:04 PM</td>
-                                                        <td class='linked' test-id='10'>Check Contact Us functionality.Veirify Phone Number error messages.Veirify Phone Number error messages.Then the correct "The field is required@." is displayed</td>
-                                                        <td><pre><textarea>org.junit.ComparisonFailure: expected:<...he field is required[@].> but was:<...he field is required[].>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at StepDefinitions.Contact_Us.the_correct_is_displayed(Contact_Us.java:55)
-	at ✽.Then the correct "The field is required@." is displayed(src/main/resource/Features/Contact_Us.feature:7)
-</textarea></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -452,19 +378,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 7, 2020 01:20:55 PM</div>
+					<div class='panel-lead'>Apr 7, 2020 03:02:37 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 7, 2020 01:21:04 PM</div>
+			 		<div class='panel-lead'>Apr 7, 2020 03:02:46 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>9,366ms</div>
+					<div class='panel-lead'>9,517ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -480,12 +406,12 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@tag2</td>
-							<td>1</td>
-							<td>1</td>
+							<td>@SmokeTest</td>
+							<td>2</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									50%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -501,31 +427,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 1,
-				failChild: 1,
+				passChild: 2,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 1,
+				exceptionsChild: 0,
 				
-				passGrandChild: 5,
-				failGrandChild: 1,
+				passGrandChild: 6,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 1,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		

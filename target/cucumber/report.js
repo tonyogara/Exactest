@@ -16,7 +16,7 @@ formatter.scenarioOutline({
   "tags": [
     {
       "line": 3,
-      "name": "@tag2"
+      "name": "@SmokeTest"
     }
   ]
 });
@@ -69,7 +69,7 @@ formatter.examples({
         "",
         "Bob.Brown@email.com",
         "Some message",
-        "The field is required@."
+        "The field is required."
       ],
       "line": 12,
       "id": "check-contact-us-functionality;veirify-phone-number-error-messages;;3"
@@ -87,7 +87,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 3,
-      "name": "@tag2"
+      "name": "@SmokeTest"
     }
   ]
 });
@@ -119,7 +119,7 @@ formatter.match({
   "location": "Contact_Us.i_am_on_the_contact_page()"
 });
 formatter.result({
-  "duration": 3226778640,
+  "duration": 3347403493,
   "status": "passed"
 });
 formatter.match({
@@ -144,7 +144,7 @@ formatter.match({
   "location": "Contact_Us.user_enters_contact_details(String,String,String,String)"
 });
 formatter.result({
-  "duration": 1384551849,
+  "duration": 1271789341,
   "status": "passed"
 });
 formatter.match({
@@ -157,7 +157,7 @@ formatter.match({
   "location": "Contact_Us.the_correct_is_displayed(String)"
 });
 formatter.result({
-  "duration": 428616189,
+  "duration": 427899720,
   "status": "passed"
 });
 formatter.scenario({
@@ -170,7 +170,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 3,
-      "name": "@tag2"
+      "name": "@SmokeTest"
     }
   ]
 });
@@ -192,7 +192,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "the correct \"The field is required@.\" is displayed",
+  "name": "the correct \"The field is required.\" is displayed",
   "matchedColumns": [
     4
   ],
@@ -202,7 +202,7 @@ formatter.match({
   "location": "Contact_Us.i_am_on_the_contact_page()"
 });
 formatter.result({
-  "duration": 2082329191,
+  "duration": 2288260627,
   "status": "passed"
 });
 formatter.match({
@@ -227,21 +227,20 @@ formatter.match({
   "location": "Contact_Us.user_enters_contact_details(String,String,String,String)"
 });
 formatter.result({
-  "duration": 1391584939,
+  "duration": 1426257238,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "The field is required@.",
+      "val": "The field is required.",
       "offset": 13
     }
   ],
   "location": "Contact_Us.the_correct_is_displayed(String)"
 });
 formatter.result({
-  "duration": 592610361,
-  "error_message": "org.junit.ComparisonFailure: expected:\u003c...he field is required[@].\u003e but was:\u003c...he field is required[].\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat StepDefinitions.Contact_Us.the_correct_is_displayed(Contact_Us.java:55)\n\tat ✽.Then the correct \"The field is required@.\" is displayed(src/main/resource/Features/Contact_Us.feature:7)\n",
-  "status": "failed"
+  "duration": 426665850,
+  "status": "passed"
 });
 });

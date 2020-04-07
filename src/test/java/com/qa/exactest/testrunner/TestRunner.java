@@ -17,7 +17,9 @@ import cucumber.api.junit.Cucumber;
 							glue="StepDefinitions",
 							plugin = {"pretty", "html:target/cucumber",
 									"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/Exactest report.html"
-							})
+							}
+							,tags = {"@SmokeTest"}
+							)
 
 
 
