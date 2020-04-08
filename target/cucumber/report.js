@@ -16,7 +16,7 @@ formatter.scenarioOutline({
   "tags": [
     {
       "line": 3,
-      "name": "@SmokeTest"
+      "name": "@SystemTest"
     }
   ]
 });
@@ -87,7 +87,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 3,
-      "name": "@SmokeTest"
+      "name": "@SystemTest"
     }
   ]
 });
@@ -119,7 +119,7 @@ formatter.match({
   "location": "Contact_Us.i_am_on_the_contact_page()"
 });
 formatter.result({
-  "duration": 2977394375,
+  "duration": 2553229532,
   "status": "passed"
 });
 formatter.match({
@@ -144,7 +144,7 @@ formatter.match({
   "location": "Contact_Us.user_enters_contact_details(String,String,String,String)"
 });
 formatter.result({
-  "duration": 939602548,
+  "duration": 846564903,
   "status": "passed"
 });
 formatter.match({
@@ -157,7 +157,7 @@ formatter.match({
   "location": "Contact_Us.the_correct_is_displayed(String)"
 });
 formatter.result({
-  "duration": 435320408,
+  "duration": 478131734,
   "status": "passed"
 });
 formatter.scenario({
@@ -170,7 +170,7 @@ formatter.scenario({
   "tags": [
     {
       "line": 3,
-      "name": "@SmokeTest"
+      "name": "@SystemTest"
     }
   ]
 });
@@ -202,7 +202,7 @@ formatter.match({
   "location": "Contact_Us.i_am_on_the_contact_page()"
 });
 formatter.result({
-  "duration": 2058733406,
+  "duration": 1941587866,
   "status": "passed"
 });
 formatter.match({
@@ -227,7 +227,7 @@ formatter.match({
   "location": "Contact_Us.user_enters_contact_details(String,String,String,String)"
 });
 formatter.result({
-  "duration": 873606284,
+  "duration": 821271598,
   "status": "passed"
 });
 formatter.match({
@@ -240,7 +240,7 @@ formatter.match({
   "location": "Contact_Us.the_correct_is_displayed(String)"
 });
 formatter.result({
-  "duration": 410717280,
+  "duration": 419501903,
   "status": "passed"
 });
 });

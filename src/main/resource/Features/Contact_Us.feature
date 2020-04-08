@@ -1,6 +1,6 @@
 Feature: Check Contact Us functionality
 
-  @SmokeTest
+  @SystemTest
   Scenario Outline: Veirify Phone Number error messages
     Given I am on the contact page
     When I enter valid full name "<Full Name>" and invalid phone entry "<Phone Entry>" and email "<Email Address>" and message "<Message>"
