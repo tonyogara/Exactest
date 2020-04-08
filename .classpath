@@ -6,6 +6,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="resource"/>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="test" value="true"/>
@@ -29,8 +30,8 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="/Users/tony/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar" sourcepath="/Users/tony/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5-sources.jar">
 		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="maven.groupId" value="info.cukes"/>
 			<attribute name="maven.artifactId" value="cucumber-junit"/>
 			<attribute name="maven.version" value="1.2.5"/>

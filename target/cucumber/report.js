@@ -119,7 +119,7 @@ formatter.match({
   "location": "Contact_Us.i_am_on_the_contact_page()"
 });
 formatter.result({
-  "duration": 3347403493,
+  "duration": 2977394375,
   "status": "passed"
 });
 formatter.match({
@@ -144,7 +144,7 @@ formatter.match({
   "location": "Contact_Us.user_enters_contact_details(String,String,String,String)"
 });
 formatter.result({
-  "duration": 1271789341,
+  "duration": 939602548,
   "status": "passed"
 });
 formatter.match({
@@ -157,7 +157,7 @@ formatter.match({
   "location": "Contact_Us.the_correct_is_displayed(String)"
 });
 formatter.result({
-  "duration": 427899720,
+  "duration": 435320408,
   "status": "passed"
 });
 formatter.scenario({
@@ -202,7 +202,7 @@ formatter.match({
   "location": "Contact_Us.i_am_on_the_contact_page()"
 });
 formatter.result({
-  "duration": 2288260627,
+  "duration": 2058733406,
   "status": "passed"
 });
 formatter.match({
@@ -227,7 +227,7 @@ formatter.match({
   "location": "Contact_Us.user_enters_contact_details(String,String,String,String)"
 });
 formatter.result({
-  "duration": 1426257238,
+  "duration": 873606284,
   "status": "passed"
 });
 formatter.match({
@@ -240,7 +240,7 @@ formatter.match({
   "location": "Contact_Us.the_correct_is_displayed(String)"
 });
 formatter.result({
-  "duration": 426665850,
+  "duration": 410717280,
   "status": "passed"
 });
 });

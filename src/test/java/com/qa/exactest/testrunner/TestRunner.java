@@ -18,7 +18,7 @@ import cucumber.api.junit.Cucumber;
 							plugin = {"pretty", "html:target/cucumber",
 									"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/Exactest report.html"
 							}
-							,tags = {"@SmokeTest"}
+							//,tags = {"@SmokeTest"}
 							)
 
 
