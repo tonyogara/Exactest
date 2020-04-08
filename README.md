@@ -12,6 +12,7 @@
 * [Contact](#contact)
 
 ## General info
+This projects is based around automation testing of the Exactest website. Am using this to improve my automation experience using a real world website. The website has been downloaded to run locally. Site was downloaded using the "HTTrack" tool.
 Add more general information about project. What the purpose of the project is? Motivation?
 
 ## Screenshots
