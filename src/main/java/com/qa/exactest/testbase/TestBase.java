@@ -36,20 +36,7 @@ public class TestBase
 		
 	}
 	
-	/*
-	 * 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-		ChromeOptions options = new ChromeOptions();
-		//options.addArguments("incognito");
-		//options.setHeadless(true);
-		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-		
-		System.setProperty("webdriver.chrome.driver", "/Users/tony/FreeCrmWS/FreeCrmArId/src/chromedriver-2");
-		driver = new ChromeDriver(options);
-		driver.get("file:///Users/tony/websites/Exactest/exactest.ie/index.html");
-		
-		driver.findElement(By.xpath("//nav[@id='site-navigation']//a[contains(text(),'Consultancy')]")).click();
 
-	 */
 	
 	public void initialization()
 	{
@@ -71,21 +58,12 @@ public class TestBase
 		}
 		
 		driver.manage().window().maximize();
-		//driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Util.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
-		//driver.get(prop.getProperty("launchUrl"));
+		
 		
 	}
-	
-	@AfterClass()
-	protected void tearDown() {
-	    driver.quit();
-	    driver = null;
-	}
-	
-	
-	
-	
+		
 }

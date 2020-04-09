@@ -30,11 +30,6 @@ public class HomePage extends TestBase
 	@FindBy(xpath="//ul[@class='inline']//a[contains(text(),'Contact us')]")
 	private WebElement contactUsLink;
 	
-
-	
-	
-//	@FindBy(linkText="Contact us •")
-//	private WebElement contactUsLink;
 		
 	public HomePage()
 	{

@@ -3,17 +3,10 @@ package StepDefinitions;
 import cucumber.api.java.en.Given;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.qa.exactest.pages.HomePage;
 import com.qa.exactest.testbase.TestBase;
-
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.bytebuddy.matcher.ModifierMatcher.Mode;
 
 
 public class Launch extends TestBase{
@@ -35,8 +28,9 @@ public class Launch extends TestBase{
 	@Then("^I will be on the Consultancy page$")
 	public void i_will_be_on_the_Consultancy_page() throws Throwable {
 		String expectedTitle = "Consultancy | Exactest - Improve the Quality of your Software";
-		String url = hp.getPageTitle();
-		Assert.assertEquals(expectedTitle, url);		
+		String actualPageTitle = hp.getPageTitle();
+		Assert.assertEquals(expectedTitle, actualPageTitle);	
+		driver.quit();
 	}
 
 }
