@@ -12,10 +12,7 @@
 * [Contact](#contact)
 
 ## General info
-This projects is based around the automation testing of the Exactest website. I am using this to improve my automation experience using a real world website. The website has been downloaded to run locally. Site was downloaded using the "HTTrack" tool.
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
+This projects is based around the automation testing of the "Exactest" website. I am using this to improve my automation experience using a real world website. The website has been downloaded to run locally. Site was downloaded using the "HTTrack" tool.
 
 ## Technologies
 * Technologies used are Java, Eclipese IDE, Selenium, Cucumber, Extent Report.
@@ -50,17 +47,17 @@ Feature: Check Contact Us functionality
 ## Features
 List of features ready
 * Feature: Launch.feature - Check launching the application works.
-* Feature: Contact_Us.feature - Check Contact Us functionality
+* Feature: Contact_Us.feature - Check "Contact Us" page functionality
 
 To-do list:
-* Feature: Check all links land on the correct page
+* Feature: Check all links land on the correct pages
 
 
 ## Status
-Project is in progress. More features will be added. Work up to now has been to set up the framework and prove that the features created run as expected
+Project is in progress. More features will be added. Work up to now has been to set up the framework and prove that the features that were created run as expected
 
 ## Inspiration
-Learning from different websites on Youtube. Alot of problems solved by referencing the "Stackoverflow" website.
+Learning from different websites on Youtube. Many of the problems solved by referencing the "Stackoverflow" website.
 
 ## Contact
 Created by [tony.ogara@gmail.com) - feel free to contact me!
