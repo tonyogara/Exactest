@@ -22,8 +22,8 @@ This projects is based around the automation testing of the Exactest website. I 
 
 ## Setup
 1. Load the ExactestFrameWorkArId into Eclipse
-2. Load the downloaded website to a specific folder. Copy the localtion of the "index.html" file to the "launchUrl" setting in the config.properties file. * Note if this is to be run on the live site then just copy the live url "https://exactest.ie" to the "launchUrl" in the config.properties file.
-3. To run the "Contact_Us" feature file set the "contactUsUrl" value to the following  location "file:///Users/tony/websites/Exactest/exactest.ie/contact-us/index.html"
+2. Load the downloaded "Exactest" website to a folder. Copy the localtion of the "index.html" file in the folder to the "launchUrl" setting in the config.properties file. 
+3. To run the "Contact_Us" feature file set the "contactUsUrl" value to the following  location "file:///'NAME OF THE FOLDER THE WEBSITE WAS DOWNLOADED TO'/exactest.ie/contact-us/index.html"
 4. In the config.properties file set the "reportConfigPath" value to "extent-config.xml" file that was loaded in step 1
 5. Feature files have been set with the following tags:
 @SmokeTest
